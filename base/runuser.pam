@@ -1,0 +1,5 @@
+#%PAM-1.0
+auth            sufficient      pam_rootok.so
+session         optional        pam_keyinit.so revoke
+session         optional        pam_limits.so
+session         optional        pam_unix.so

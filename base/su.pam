@@ -1,0 +1,8 @@
+#%PAM-1.0
+auth            optional        pam_rootok.so
+auth            optional        system-auth
+account         optional        pam_succeed_if.so uid = 0 use_uid quiet
+account         optional        system-auth
+password        optional        system-auth
+session         optional        system-auth
+session         optional        pam_xauth.so
