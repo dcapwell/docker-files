@@ -8,3 +8,6 @@ ADD configs /opt/hadoop/hadoop-2.4.1/etc/hadoop/
 RUN /opt/hadoop/hadoop-2.4.1/bin/hdfs namenode -format
 
 ADD start-all.sh /opt/hadoop/hadoop-2.4.1/
+
+ENV HADOOP_CONF_DIR   /opt/hadoop/hadoop-2.4.1/etc/hadoop/
+ENV YARN_CONF_DIR     /opt/hadoop/hadoop-2.4.1/etc/hadoop/

@@ -22,6 +22,6 @@ sbin/yarn-daemon.sh start nodemanager
 ./bin/hadoop fs -copyFromLocal logs/hadoop--namenode-$(hostname).log namenode.log
 
 ## run simple job
-./bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount namenode.log /tmp/wordcount
+#./bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount namenode.log /tmp/wordcount
 
-./bin/yarn application -list -appStates ALL
+#./bin/yarn application -list -appStates ALL
