@@ -1,4 +1,4 @@
-FROM dcapwell/base:0.1
+FROM dcapwell/base:0.2
 
 RUN mkdir -p /opt/hadoop
 RUN cd /opt/hadoop && wget 'http://mirrors.koehn.com/apache/hadoop/common/hadoop-2.4.1/hadoop-2.4.1.tar.gz' && tar zxvf hadoop-2.4.1.tar.gz && rm hadoop-2.4.1.tar.gz
